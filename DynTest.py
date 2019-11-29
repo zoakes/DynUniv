@@ -58,9 +58,9 @@ def make_pipe(pipe_dict,ret_all=True):
     Create DF using pipeline dict -- 
     if ret_all is false, returns only explicit columsn in COLS
     '''
-    f = nest_dict['FILT']
-    c = nest_dict['COLS']
-    ic = nest_dict['INDIC']
+    f = pipe_dict['FILT']
+    c = pipe_dict['COLS']
+    ic = pipe_dict['INDIC']
     df = base_universe
     
     #Add indicators
