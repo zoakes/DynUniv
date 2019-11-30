@@ -61,7 +61,7 @@ def make_pipe(pipe_dict,ret_all=True):
     f = pipe_dict['FILT']
     c = pipe_dict['COLS']
     ic = pipe_dict['INDIC']
-    df = base_universe
+    df = pipe_dict['BASE']
     
     #Add indicators
     for k,v in ic.items(): 
